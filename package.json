@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-firebase-analytics",
+  "version": "1.0.0",
+  "description": "Cordova Plugin for logging events in Firebase Analytics",
+  "cordova": {
+    "id": "cordova-plugin-firebase-analytics",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunder-lab/cordova-plugin-firebase-analytics.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "firebase",
+    "analytics",
+    ""
+  ],
+  "author": "kunder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kunder-lab/cordova-plugin-firebase-analytics/issues"
+  },
+  "homepage": "https://github.com/kunder-lab/cordova-plugin-firebase-analytics#readme"
+}

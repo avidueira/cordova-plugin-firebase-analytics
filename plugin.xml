@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+   xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-firebase-analytics" version="1.0.0">
+   <name>Firebase Analytics Plugin</name>
+   <js-module name="FirebaseAnalyticsPlugin" src="www/FirebaseAnalyticsPlugin.js">
+      <clobbers target="cordova.plugins.FirebaseAnalyticsPlugin" />
+   </js-module>
+   <platform name="ios">
+      <config-file parent="/*" target="config.xml">
+         <feature name="FirebaseAnalyticsPlugin">
+            <param name="ios-package" value="FirebaseAnalyticsPlugin" />
+         </feature>
+      </config-file>
+      <config-file target="config.xml" parent="/*">
+         <preference name="deployment-target" value="9.0" />
+         <feature name="FirebaseAnalyticsPlugin">
+            <param name="ios-package" value="FirebaseAnalyticsPlugin" />
+            <param name="onload" value="true" />
+         </feature>
+      </config-file>
+      <header-file src="src/ios/FirebaseAnalyticsPlugin.h" />
+      <source-file src="src/ios/FirebaseAnalyticsPlugin.m" />
+      <framework src="Firebase/Core" type="podspec" spec="~> 5.8"/>
+   </platform>
+   <platform name="android">
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="FirebaseAnalyticsPlugin">
+            <param name="android-package" value="cl.kunder.firebaseanalytics.FirebaseAnalyticsPlugin" />
+         </feature>
+      </config-file>
+      <framework src="com.google.firebase:firebase-core:16.0.1" />
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/FirebaseAnalyticsPlugin.java" target-dir="src/cl/kunder/firebaseanalytics" />
+   </platform>
+</plugin>
