@@ -1,4 +1,4 @@
-# cordova-plugin-firebase-analytics<br>[![NPM version][npm-version]][npm-url] [![NPM downloads][npm-downloads]][npm-url]
+# cordova-plugin-firebase-analytics
 > Cordova Plugin for logging events in [Firebase Analytics](https://firebase.google.com/docs/analytics/)
 
 ## Installation
