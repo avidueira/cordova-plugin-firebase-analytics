@@ -6,8 +6,6 @@ exports.registerEvent = function (eventName, eventParams) {
     }
 
     var pluginParams = [eventName, eventParams || {}];
-    var successCallback = function() { };
-    var errorCallback = function() { };
 
-    cordova.exec(successCallback, errorCallback, "FirebaseAnalyticsPlugin", "logEvent", pluginParams);
+    cordova.exec(function() { }, function() { }, "FirebaseAnalyticsPlugin", "logEvent", pluginParams);
 };
